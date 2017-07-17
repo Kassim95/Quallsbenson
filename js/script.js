@@ -60,7 +60,8 @@ $(document).ready(function () {
 	$('.journal').on('click', function(){
 		$('.nav-modal').hide();
 		$('.landing').hide();
-		$('.social-feed-container').show();
+		$('.social-feed-container').css({"display": "inline-block", "height": "100vh"});
+		$('.social-feed-container').masonry();
 	});
 	//journal page
 	$('.home, .logo').on('click', function(){
@@ -71,13 +72,13 @@ $(document).ready(function () {
 	  // FACEBOOK
 	  facebook: {
 	      accounts: ['@journalsquaredjc'],
-	      limit: 100,
+	      limit: 60,
 	      access_token: '276761649336363|c4146b3378fc2941b3ca7c3553475b1a'
 	  },
 	  	  // INSTAGRAM
     instagram: {
         accounts: ['@journalsquared'],
-        limit: 100,
+        limit: 4,
         client_id: 'a473993a81b343cbbb4a7e1127fc030f',
         access_token: '5744467607.a473993.4c696a3e3ac04b21a3b7af5cf3b7b230'
     },
@@ -91,7 +92,11 @@ $(document).ready(function () {
 	  //update_period: 5000,
 	  // When all the posts are collected and displayed - this function is evoked
 	  callback: function() {
-	      console.log('all posts are collected');
+      console.log('all posts are collected');
+      $('.social-feed-container').masonry({
+		  	// options...
+			  itemSelector: '.social-feed-element',
+			});
 	  }
 	});
 });

@@ -33,7 +33,6 @@ nav{
 }
 .container, .social-feed-container{
   margin-left: 4vw;
-  position: relative;
 }
 .title{
   margin-top: 27vh;
@@ -88,8 +87,4 @@ nav{
 .attachment{
   height: 68vh;
   width: 100%;
-  clear: left;
-}
-.social-feed-container{
-  display: none;
 }
