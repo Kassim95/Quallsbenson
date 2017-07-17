@@ -1,0 +1,95 @@
+html, body{
+  display: inline-block;
+}
+nav{
+  float: left;
+  position: fixed;
+  margin: auto;
+  padding-top: 4vh;
+  width: 5vw;
+  z-index: 999;
+  background-color: white;
+  height: 100vh;
+  overflow: hidden;
+}
+.nav-elements{
+  list-style-type: none;
+  padding: 0;
+  clear: left;
+}
+.nav-elements li{
+  text-align: center;
+  position: relative;
+}
+.jo{
+  margin-bottom: 10vh;
+}
+.links{
+  margin-bottom: 3vh;
+  text-shadow: 1px 1px 1px #ccc;
+}
+.bottom-nav{
+  margin-top: 7vh;
+}
+.container, .social-feed-container{
+  margin-left: 4vw;
+  position: relative;
+}
+.title{
+  margin-top: 27vh;
+}
+.sub-title{
+  color: white;
+  width: 30vw;
+  text-align: center;
+}
+.icon-title{
+  font-size: 11px;
+  display: none;
+}
+.blend{
+  margin: 0;
+  padding: 0;  
+  margin-bottom: -3.5vh;
+}
+.icon{
+  z-index: 999999;
+  margin-bottom: -4.5vh;
+}
+.home{
+  margin-top: 1.5vh;
+}
+.links, .home, .social{
+  cursor: pointer;
+}
+.nav-modal{
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background-color: #F0CED4;
+  opacity: 0.8;
+  background: -webkit-linear-gradient(-90deg, #F0CED4, #4F6A7D); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, #F0CED4, #4F6A7D); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, #F0CED4, #4F6A7D); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, #F0CED4, #4F6A7D); /* Standard syntax */
+
+}
+.modal-t{
+  margin-top: 40vh;
+}
+.modal-p, .modal-t{
+  text-align: center;
+  color: white;
+}
+.attachment{
+  height: 68vh;
+  width: 100%;
+  clear: left;
+}
+.social-feed-container{
+  display: none;
+}
